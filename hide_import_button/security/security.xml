@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+        <record id="show_import_button" model="res.groups">
+            <field name="name">Show Import Button</field>
+            <field name="category_id" ref="base.module_category_extra"/>
+            <!-- <field name="users" eval="[(4, ref('base.user_root'))]"/> -->
+        </record>
+
+	</data>
+</openerp>
