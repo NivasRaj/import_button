@@ -1,14 +1,22 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Import Button - Based on User Groups',
-    'summary': """
-        Displaying Import Button based on user group.""",
-    'version': '9.0.1.0.0',
-    'license': 'AGPL-3',
-    'author': 'Nivas M',
-    'website': '',
+    'name': 'Show Import Button - Based on User Groups',
+    'version': '9.0.1.2',
+    'license': 'LGPL-3',
+    'category': 'Tools',
+    "sequence": 1,
+    'summary': 'This module is used for restrict the import button for user level access.',
+    'complexity': "easy",
+    'description': """
+        This module hide the 'Import' button by default.
+        If you want to show 'Import' button for a specific user you have to select 'Show Import Button' group in user form.
+    """,
+	'author': 'Nivas M',
     'depends': ['base', 'web'],
     'data': ['security/security.xml',
              'views/webclient_templates.xml'
     ],
+    'installable': True,
+    'auto_install': False,
+	'application': True,
 }
